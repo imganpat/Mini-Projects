@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 99vw;
+  text-align: center;
+  background-color: #283149;
+}
+
+#title {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+  margin-top: 1rem;
+}
+
+.set {
+  margin: 10rem auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.tom-1 {
+  background: url(images/tom1.png) no-repeat content-box center;
+  background-size: 7rem;
+}
+.tom-2 {
+  background: url(images/tom2.png) no-repeat content-box center;
+  background-size: 7rem;
+}
+.tom-3 {
+  background: url(images/tom3.png) no-repeat content-box center;
+  background-size: 6rem;
+}
+.tom-4 {
+  background: url(images/tom4.png) no-repeat content-box center;
+  background-size: 6rem;
+}
+.kick-bass {
+  background: url(images/kick.png) no-repeat content-box center;
+  background-size: 8rem;
+}
+.crash {
+  background: url(images/crash.png) no-repeat content-box center center;
+  background-size: 3rem;
+}
+.snare {
+  background: url(images/snare.png) no-repeat content-box center;
+  background-size: 5rem;
+}
+
+.drum:active {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+@media (max-width: 800px) {
+  #title {
+    font-size: 2rem;
+  }
+
+  .set {
+    margin: 5rem auto;
+  }
+
+  .drum {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .tom-1 {
+    background-size: 4rem;
+  }
+  .tom-2 {
+    background-size: 4rem;
+  }
+  .tom-3 {
+    background-size: 3rem;
+  }
+  .tom-4 {
+    background-size: 3rem;
+  }
+  .kick-bass {
+    background-size: 4rem;
+  }
+  .crash {
+    background-size: 2rem;
+  }
+  .snare {
+    background-size: 3.5rem;
+  }
+}
