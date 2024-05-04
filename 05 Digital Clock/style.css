@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "digital";
+  src: url(ds_digital/DS-DIGI.TTF);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "digital";
+}
+
+.container {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010206;
+  overflow: hidden;
+  position: relative;
+}
+
+.clock-container {
+  height: 16.7rem;
+  width: 33.7rem;
+  background-color: #011519;
+  border-radius: 1.5rem;
+  box-shadow: 0px 2px 20px #01a7a740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.clock-container::after {
+  content: "";
+  height: 40rem;
+  width: 40rem;
+  background: conic-gradient(transparent, transparent, transparent, #00e1e1);
+  filter: blur(10px);
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: border-rotate 5s linear infinite;
+}
+
+.clock-container::before {
+  content: "";
+  height: 40rem;
+  width: 40rem;
+  background: conic-gradient(transparent, transparent, transparent, #00e1e1);
+  filter: blur(10px);
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: border-rotate 5s linear infinite;
+  animation-delay: -2.4s;
+}
+
+.clock {
+  height: 16rem;
+  width: 33rem;
+  color: #00e1e1;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.39);
+  background-color: #011519;
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.blur {
+  height: 8rem;
+  width: 60rem;
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.815);
+  filter: blur(250px);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date-section {
+  letter-spacing: 3px;
+}
+
+.time-section {
+  font-size: 5rem;
+}
+
+.credit-section {
+  font-size: 0.85rem;
+  letter-spacing: 5px;
+}
+
+@keyframes border-rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@media (max-width: 1028px) {
+  .blur {
+    height: 8rem;
+    width: 8rem;
+    background-color: rgb(0, 255, 255);
+  }
+
+  .clock-container {
+    width: 20.5rem;
+    height: 10.5rem;
+  }
+
+  .clock {
+    width: 20rem;
+    height: 10rem;
+    background-color: #010f11;
+    border-radius: 1rem;
+    gap: 1.2rem;
+  }
+
+  .date-section {
+    font-size: 0.9rem;
+  }
+
+  .time-section {
+    font-size: 3rem;
+  }
+
+  .credit-section {
+    font-size: 0.7rem;
+  }
+}
