@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+form {
+  height: 35rem;
+  width: 30rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.286);
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-block: 1rem;
+  text-align: center;
+}
+
+.input-container {
+  height: 5.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+label {
+  color: #3a3a3a;
+  font-size: 14px;
+}
+
+input {
+  height: 2.3rem;
+  width: 100%;
+  outline: none;
+  padding-inline: 5px;
+  margin-block: 0.5rem;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 4px;
+}
+
+input:focus {
+  border: none;
+  outline: 1px solid #2178fb;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.error-show {
+  visibility: visible;
+}
+
+#register-btn {
+  border: none;
+  color: #fff;
+  height: 2.5rem;
+  /* margin-top: 1rem; */
+  border-radius: 4px;
+  background-color: #2178fb;
+}
+
+@media (max-width: 1028px) {
+  form {
+    margin-inline: 1rem;
+    padding: 1rem 1.3rem;
+  }
+}

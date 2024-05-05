@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+
+  <body>
+    <form id="registration-form">
+      <h2>Form Validation</h2>
+      <!-- username -->
+      <div class="input-container">
+        <label for="username">
+          Username
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username"
+          />
+        </label>
+        <span class="error-message" id="username-error">Error</span>
+      </div>
+
+      <!-- email -->
+      <div class="input-container">
+        <label for="email">
+          E-mail
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+          />
+        </label>
+        <span class="error-message" id="email-error">Error</span>
+      </div>
+
+      <!-- password -->
+      <div class="input-container">
+        <label for="password">
+          Password
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+          />
+        </label>
+        <span class="error-message" id="password-error">Error</span>
+      </div>
+
+      <!-- contermation -->
+      <div class="input-container">
+        <label for="pass-confirm">
+          Confirm Password
+          <input
+            type="password"
+            name="pass-confirm"
+            id="pass-confirm"
+            placeholder="Enter password again"
+          />
+        </label>
+        <span class="error-message" id="confirm-error">Error</span>
+      </div>
+
+      <button type="submit" id="register-btn">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
