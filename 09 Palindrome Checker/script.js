@@ -30,7 +30,12 @@ button.addEventListener("click", e => {
         output.textContent = `Enter the string`;
         return;
     }
-    if (isPalindrome(input.value))
+    if (isPalindrome(input.value)) {
         output.textContent = `${input.value} is palindrome string`;
-    else output.textContent = `${input.value} is not palindrome string`;
+        output.style.color = "#5cb85c"
+    }
+    else {
+        output.textContent = `${input.value} is not palindrome string`;
+        output.style.color = "#dc4c64"
+    }
 });
