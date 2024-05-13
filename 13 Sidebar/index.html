@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="menu-items">
+          <div class="logo">
+            <img src="" alt="" />
+            <p>Logo</p>
+          </div>
+          <i class="fa-solid fa-bars" id="ham-btn"></i>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-house"></i></span>
+              <p>Home</p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p>Inbox</p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-bell"></i></span>
+              <p>Notifications</p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-chart-simple"></i></span>
+              <p>Analysis</p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-gear"></i></span>
+              <p>Settings</p>
+            </li>
+          </ul>
+        </div>
+        <div class="user-details">
+          <img src="pp.png" alt="" id="profile-pic" />
+          <div class="user">
+            <p id="name">Ganpat Choudhary</p>
+            <p id="email">fakeganpat@gmail.com</p>
+          </div>
+          <i class="fa-solid fa-arrow-right-from-bracket" id="logout-btn"></i>
+        </div>
+      </div>
+
+      <div class="dashboard">
+        <div class="prop"></div>
+        <div class="prop"></div>
+        <div class="prop"></div>
+        <div class="prop"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
