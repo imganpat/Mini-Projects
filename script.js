@@ -90,6 +90,13 @@ const projectData = [
         demo: "https://sidebar-gc.netlify.app",
         code: "https://github.com/imganpat/Mini-Projects/tree/main/13%20Sidebar",
     },
+    {
+        id: 14,
+        name: "Responsive Navbar",
+        image: "screenshots/14.png",
+        demo: "https://navbar-gc.netlify.app",
+        code: "https://github.com/imganpat/Mini-Projects/tree/main/14%20Navbar",
+    },
 
 ];
 
@@ -119,3 +126,23 @@ projectData.forEach(project => {
     container.appendChild(card)
 
 })
+
+
+// animation
+
+const projectCard = document.querySelectorAll(".project-card")
+
+const animate = () => {
+    const triggerBottom = window.innerHeight / 5 * 4
+    projectCard.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top
+        if (cardTop < triggerBottom)
+            card.classList.add("show")
+        else
+            card.classList.remove("show")
+    })
+}
+
+window.addEventListener("scroll", animate)
+animate()
+
