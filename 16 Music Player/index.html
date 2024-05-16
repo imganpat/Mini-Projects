@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-container">
+        <div class="music-info">
+          <div class="song-image-container">
+            <img src="images/royalty.jpg" alt="" class="song-image" />
+            <span class="hole"></span>
+          </div>
+          <div class="song-name">Royalty</div>
+        </div>
+        <div class="buttons-container">
+          <div class="btn">
+            <i id="prev-btn" class="fa-solid fa-backward"></i>
+          </div>
+          <div class="btn">
+            <i id="play-btn" class="fa-solid fa-play"></i>
+          </div>
+          <div class="btn">
+            <i id="next-btn" class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="cursor"></div>
+          </div>
+          <div class="duration-container">
+            <span class="current-duration">00:00 </span>
+            <span class="total">03:45</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100dvh;
+  width: 100vw;
+  background: linear-gradient(45deg, #031c30, #0f324e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-container {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 10px;
+  padding: 1.3rem;
+  background-color: #0000005c;
+}
+
+.music-info {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.song-image-container {
+  height: 100%;
+  position: relative;
+}
+
+.song-image {
+  height: 90%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  animation: spin 5s infinite linear paused;
+}
+
+.hole {
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hole::after {
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-name {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.buttons-container {
+  height: 3rem;
+  width: 100%;
+  margin-block: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn > i {
+  font-size: 1.5rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.btn:nth-child(2) {
+  transform: scale(1.25);
+}
+
+.progress-container {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.progress-bar {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #485057;
+  position: relative;
+}
+
+.duration-container {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  /* margin-top: 2rem; */
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+}
+
+.cursor {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  top: -50%;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
