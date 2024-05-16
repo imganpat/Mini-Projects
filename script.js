@@ -97,7 +97,13 @@ const projectData = [
         demo: "https://navbar-gc.netlify.app",
         code: "https://github.com/imganpat/Mini-Projects/tree/main/14%20Navbar",
     },
-
+    {
+        id: 15,
+        name: "Guess The Number",
+        image: "screenshots/15.png",
+        demo: "https://guess-the-number-gc.netlify.app",
+        code: "https://github.com/imganpat/Mini-Projects/tree/main/15%20Guess%20The%20Number",
+    },
 ];
 
 const container = document.querySelector(".container");
