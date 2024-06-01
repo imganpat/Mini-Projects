@@ -115,8 +115,8 @@ const projectData = [
         id: 17,
         name: "Age Calculator",
         image: "screenshots/17.png",
-        demo: "https://music-player-gc.netlify.app",
-        code: "https://github.com/imganpat/Mini-Projects/tree/main/16%20Music%20Player",
+        demo: "https://age-calculator-gc.netlify.app",
+        code: "https://github.com/imganpat/Mini-Projects/tree/main/17%20Age%20Calculator",
     },
 ];
 
