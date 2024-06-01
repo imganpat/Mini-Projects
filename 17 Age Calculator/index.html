@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator - Calculate your right Age</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="input-wrapper">
+          <div class="date-wrapper">
+            <label for="date">Date</label>
+            <input type="number" min="1" max="31" id="date" />
+          </div>
+          <div class="month-wrapper">
+            <label for="month">Month</label>
+            <input type="number" min="1" max="12" id="month" />
+          </div>
+          <div class="year-wrapper">
+            <label for="year">Year</label>
+            <input type="number" min="1950" max="2150" id="year" />
+          </div>
+        </div>
+        <div class="line">
+          <button id="calculate-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#ffffff"
+              fill="none"
+            >
+              <path
+                d="M3 9L14 9.00008"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 15H10"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 3H19"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.5 21V9M18.5 21C17.7998 21 16.4915 19.0057 16 18.5M18.5 21C19.2002 21 20.5085 19.0057 21 18.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="output-wrapper">
+          <div class="output-years"><span id="years">--</span>years</div>
+          <div class="output-months"><span id="months">--</span>months</div>
+          <div class="output-days"><span id="days">--</span>days</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+  --primary-text: #9900ff;
+  --primary-background: blue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.calculator {
+  height: 30rem;
+  width: 40rem;
+  padding: 0 3rem;
+  background-color: white;
+  border-radius: 1rem 1rem 5rem 1rem;
+  box-shadow: 2px 4px 15px #9c9c9c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.input-wrapper {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.date-wrapper,
+.month-wrapper,
+.year-wrapper {
+  height: 5rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input {
+  height: 2.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-text);
+}
+
+.line {
+  height: 1.5px;
+  width: 100%;
+  background-color: #9c9c9c;
+  position: relative;
+}
+
+#calculate-btn {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-text);
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-wrapper {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.output-years,
+.output-months,
+.output-days {
+  height: 28%;
+  width: 100%;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#years,
+#months,
+#days {
+  color: var(--primary-text);
+}
+
+@media (max-width: 1028px) {
+  .calculator {
+    width: 20rem;
+    height: 28rem;
+    padding: 0 1.7rem;
+  }
+
+  .input-wrapper {
+    height: 7rem;
+    gap: 1rem;
+  }
+
+  .date-wrapper,
+  .month-wrapper,
+  .year-wrapper {
+    height: 4.5rem;
+    width: 4.8rem;
+  }
+
+  .line {
+    margin-top: 1rem;
+  }
+
+  #calculate-btn {
+    height: 3.5rem;
+    width: 3.5rem;
+    top: -1.7rem;
+    left: 40%;
+  }
+
+  .output-wrapper {
+    height: 16rem;
+    justify-content: center;
+  }
+}
