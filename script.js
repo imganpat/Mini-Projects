@@ -111,6 +111,13 @@ const projectData = [
         demo: "https://music-player-gc.netlify.app",
         code: "https://github.com/imganpat/Mini-Projects/tree/main/16%20Music%20Player",
     },
+    {
+        id: 17,
+        name: "Age Calculator",
+        image: "screenshots/17.png",
+        demo: "https://music-player-gc.netlify.app",
+        code: "https://github.com/imganpat/Mini-Projects/tree/main/16%20Music%20Player",
+    },
 ];
 
 const container = document.querySelector(".container");
